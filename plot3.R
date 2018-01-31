@@ -3,6 +3,10 @@ if (!"read-data.R" %in% list.files()) {
   setwd("/Users/admin/Downloads/DATA Science/exploratory track")
 } 
 source("read-data.R")
+
+# Set weekdays in English 
+Sys.setlocale("LC_TIME", "English")
+
 png(filename = "plot3.png", 
     width = 480, height = 480,
     units = "px")
